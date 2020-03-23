@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василиса Варич](https://up.htmlacademy.ru/adaptive/19/user/503705).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Теплов](https://htmlacademy.ru/profile/id1031027).
 
 ---
 
