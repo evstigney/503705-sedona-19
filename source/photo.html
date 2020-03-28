@@ -91,21 +91,46 @@
           </p>
         </div>
       </section>
-      <section class="inner-main__video video">
+      <section class="inner-main__video video-clip">
         <h2 class="visually-hidden">Видеоролик о Седоне</h2>
-        <p class="video__lead">
+        <p class="video-clip__header">
           Все еще сомневаетесь?
         </p>
-        <p class="video__text">
+        <p class="video-clip__lead">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <video class="video__сlip" width="100" height="100">
-          <source src="img/about-sedona.mov">
-        </video>
-        <div class="video__controls">
-          <span class="visually-hidden">
-            Панель управления видео
-          </span>
+        <div class="video-clip__clip video">
+          <video class="video__clip" width="100" height="100">
+            <source src="img/sedona-overview.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            Видео экскурсия по Седоне
+          </video>
+          <div class="video__control">
+            <span class="visually-hidden">
+              Управление воспроизведением видео
+            </span>
+            <div class="video__control-progress">
+              <button class="video__control-slider">
+                <span class="visually-hidden">
+                  Передвинуть просмотр видео
+                </span>
+              </button>
+            </div>
+            <button class="video__control-repeat">
+              <span class="visually-hidden">
+                Воспроизвести сначала
+              </span>
+            </button>
+            <button class="video__control-subtitles">
+              <span class="visually-hidden">
+                Показать субтитры
+              </span>
+            </button>
+            <button class="video-__control-deploy">
+              <span class="visually-hidden">
+                Развернуть на весь экран
+              </span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
