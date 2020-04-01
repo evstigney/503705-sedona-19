@@ -47,9 +47,13 @@
         <fieldset class="review-form__group">
           <legend class="review-form__header">Контактная информация:</legend>
           <label class="review-form__label review-form__label--contacts" for="telField">Контактный телефон<sup>*</sup>:</label>
-          <input class="review-form__field" type="tel" name="tel" id="telField" placeholder="Введите телефон" required>
+          <div class="review-form__field-wrapper review-form__field-wrapper--tel">
+            <input class="review-form__field" type="tel" name="tel" id="telField" placeholder="Введите телефон" required>
+          </div>
           <label class="review-form__label review-form__label--contacts" for="emailField">Электронная почта<sup>*</sup>:</label>
-          <input class="review-form__field" type="email" name="email" id="emailField" placeholder="Введите e-mail" required>
+          <div class="review-form__field-wrapper review-form__field-wrapper--email">
+            <input class="review-form__field" type="email" name="email" id="emailField" placeholder="Введите e-mail" required>
+          </div>
         </fieldset>
         <fieldset class="review-form__group">
           <legend class="review-form__header">Ваше общее впечатление:</legend>

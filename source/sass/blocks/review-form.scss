@@ -1,4 +1,43 @@
 .review-form__field {
+  @include resetMargins;
+
+  height: 100%;
+
   background-color: $bg-light-grey;
   border: none;
+}
+
+.review-form__field-wrapper {
+  position: relative;
+
+  display: inline-block;
+  height: 30px;
+}
+
+.review-form__field-wrapper::before {
+  @include pseudoAbsolute;
+
+  $size: 30px;
+
+  top: 0;
+  right: -$size;
+
+  display: block;
+  width: $size;
+  height: $size;
+  margin-right: $size;
+
+
+  background-color: $bg-form-field-icon;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.review-form__field-wrapper--tel::before {
+  background-image: url("../../img/icon-phone.svg");
+}
+
+.review-form__field-wrapper--email::before {
+  margin-right: 0;
+  background-image: url("../../img/icon-mail.svg");
 }

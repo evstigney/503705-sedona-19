@@ -11,3 +11,9 @@
 @mixin noMarkers {
   list-style: none;
 }
+
+@mixin pseudoAbsolute {
+  position: absolute;
+
+  content: "";
+}
