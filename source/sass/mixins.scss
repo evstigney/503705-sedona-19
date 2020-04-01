@@ -1,0 +1,13 @@
+@mixin resetMargins {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin setWidth($width) {
+  width: $width;
+  box-sizing: border-box;
+}
+
+@mixin noMarkers {
+  list-style: none;
+}

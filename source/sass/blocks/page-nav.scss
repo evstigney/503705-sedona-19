@@ -1,0 +1,6 @@
+.page-nav {
+  @include resetMargins;
+  @include noMarkers;
+
+  background-color: $bg-blue;
+}

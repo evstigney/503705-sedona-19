@@ -29,7 +29,9 @@
       </nav>
     </header>
     <main class="index-body__main index-main">
-      <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
+      <div class="index-main__banner">
+        <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
+      </div>
       <p class="index-main__lead">
         Седона - небольшой городок в Аризоне, заслуживающий большего!
       </p>
@@ -39,14 +41,14 @@
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
         <ol class="features__list page-features">
-          <li class="page-features__item feature">
+          <li class="page-features__item feature feature--big">
             <h3 class="feature__header">Настоящий городок</h3>
             <p class="feature__text">
               Седона не аттракцион для туристов, там течет своя жизнь
             </p>
             <img class="feature__img" src="img/town-view.png" width="100" height="100" alt="Городской пейзаж Седоны">
           </li>
-          <li class="page-features__item feature">
+          <li class="page-features__item feature feature--big">
             <h3 class="feature__header">Там есть Мост Дьявола</h3>
             <p class="feature__text">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
@@ -76,19 +78,19 @@
       <section class="index-main__advices advices">
         <h2 class="visually-hidden">Лучшее в Седоне:</h2>
         <ul class="advices__list page-advices">
-          <li class="page-advices__item advice">
+          <li class="page-advices__item advice advice--house">
             <h3 class="advice__header">Жилье</h3>
             <p class="advice__text">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
-          <li class="page-advices__item advice">
+          <li class="page-advices__item advice advice--souvenirs">
             <h3 class="advice__header">Сувениры</h3>
             <p class="advice__text">
               Не только китайского, но и местного производства!
             </p>
           </li>
-          <li class="page-advices__item advice">
+          <li class="page-advices__item advice advice--food">
             <h3 class="advice__header">Еда</h3>
             <p class="advice__text">
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
@@ -118,14 +120,20 @@
         #visitsedona
       </p>
       <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a href="https://twitter.com">Twitter</a>
+        <li class="page-footer__social-item page-footer__social-item--twitter">
+          <a href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
-        <li class="page-footer__social-item">
-          <a href="https://facebook.com">Facebook</a>
+        <li class="page-footer__social-item page-footer__social-item--facebook">
+          <a href="https://facebook.com">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
-        <li class="page-footer__social-item">
-          <a href="https://youtube.com">Youtube</a>
+        <li class="page-footer__social-item page-footer__social-item--youtube">
+          <a href="https://youtube.com">
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
       </ul>
       <p class="page-footer__copyright">
