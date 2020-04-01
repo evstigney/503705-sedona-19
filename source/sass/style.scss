@@ -1,1 +1,26 @@
-@import "variables";
+@import "variables.scss";
+
+@import "index-body.scss";
+@import "index-main.scss";
+@import "inner-body.scss";
+@import "inner-main.scss";
+
+@import "advice.scss";
+@import "advices.scss";
+@import "booking.scss";
+@import "button.scss";
+@import "feature.scss";
+@import "features.scss";
+@import "location.scss";
+@import "main-nav.scss";
+@import "page-advices.scss";
+@import "page-features.scss";
+@import "page-footer.scss";
+@import "page-header.scss";
+@import "page-nav.scss";
+@import "photo.scss";
+@import "photoes.scss";
+@import "review-form.scss";
+@import "video-clip.scss";
+@import "video.scss";
+@import "visually-hidden.scss";
