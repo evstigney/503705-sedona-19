@@ -17,3 +17,23 @@
 
   content: "";
 }
+
+@mixin buttonBlue {
+  color: $font-white;
+  text-align: center;
+
+  background-color: $bg-blue;
+
+  &:hover {
+    color: $font-white;
+
+    background-color: $bg-hover-blue;
+    fill: red;
+  }
+
+  &:active {
+    color: rgba($font-white, 0.3);
+
+    background-color: $bg-active-blue;
+  }
+}

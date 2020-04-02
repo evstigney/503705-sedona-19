@@ -1,9 +1,20 @@
 .index-main__banner {
   min-height: 389px;
+
+  color: $font-white;
+
   background-color: $bg-banner;
   background-image:
     url("../../img/text-sedona-index.svg"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.index-main__lead {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
 }

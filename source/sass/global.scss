@@ -1,3 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   @include resetMargins;
+  
+  color: $font-dark;
+  font-family: "PT Sans", "Trebuchet MS", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-color: $bg-white;
+}
+
+a {
+  color: $font-black;
+  text-decoration: none;
+
+  &:active {
+    color: rgba($font-black, 0.3);
+  }
+
+  &:hover {
+    color: $font-hover-blue;
+  }
 }

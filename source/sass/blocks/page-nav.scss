@@ -2,5 +2,18 @@
   @include resetMargins;
   @include noMarkers;
 
+  color: $font-white;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
   background-color: $bg-blue;
 }
+
+.page-nav a {
+  @include buttonBlue;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
