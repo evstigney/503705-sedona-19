@@ -1,31 +1,32 @@
-.review-form__field {
-  @include resetMargins;
+.review-form {
+  line-height: 26px;
+}
 
-  height: 100%;
-
-  background-color: $bg-light-grey;
+.review-form__group {
   border: none;
+}
+
+.review-form__group--impression {
+  display: flex;
 }
 
 .review-form__field-wrapper {
   position: relative;
 
   display: inline-block;
-  height: 30px;
+  height: $form-field-height;
 }
 
 .review-form__field-wrapper::before {
   @include pseudoAbsolute;
 
-  $size: 30px;
-
   top: 0;
-  right: -$size;
+  right: -$form-field-height;
 
   display: block;
-  width: $size;
-  height: $size;
-  margin-right: $size;
+  width: $form-field-height;
+  height: $form-field-height;
+  margin-right: $form-field-height;
 
 
   background-color: $bg-form-field-icon;
@@ -40,4 +41,40 @@
 .review-form__field-wrapper--email::before {
   margin-right: 0;
   background-image: url("../../img/icon-mail.svg");
+}
+
+.review-form__header {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review-form__field {
+  @include resetMargins;
+
+  height: $form-field-height;
+
+  background-color: $bg-light-grey;
+  border: none;
+}
+
+.review-form__field::placeholder {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review-form__field--text {
+  width: 281px;
+  height: 161px;
+}
+
+.review-form__box-label {
+  color: $font-black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
 }

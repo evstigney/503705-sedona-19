@@ -2,13 +2,15 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
   @include resetMargins;
-  
+
   color: $font-dark;
   font-family: "PT Sans", "Trebuchet MS", "Arial", sans-serif;
   font-size: 14px;
