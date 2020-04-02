@@ -1,5 +1,5 @@
 .video__control {
-  width: 278px;
+  width: 321px;
   height: 114px;
 
   background-color: transparent;
@@ -10,8 +10,8 @@
 
   width: 235px;
   height: 3px;
-
   margin-bottom: 41px;
+  margin-left: 43px;
 
   background-color: rgba($bg-black, 0.2);
   box-shadow: 0 0 0 43px rgba($bg-black, 0.6);
@@ -31,7 +31,7 @@
 
 .video__control-wrapper {
   width: 100%;
-  height: 67px;
+  height: 84px;
 
   background-color: $bg-light-grey;
 }
