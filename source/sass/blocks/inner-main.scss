@@ -1,0 +1,24 @@
+.inner-main__banner {
+  min-height: 163px;
+
+  background-color: $bg-banner;
+  background-image:
+    url("../../img/text-sedona.svg"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-position:
+    center,
+    bottom center;
+  background-repeat: no-repeat;
+}
+
+.inner-main__header {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.inner-main__lead {
+  text-align: center;
+}

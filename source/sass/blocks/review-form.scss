@@ -1,0 +1,102 @@
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 26px;
+}
+
+.review-form__group {
+  position: relative;
+
+  border: none;
+}
+
+.review-form__group::before {
+  @include pseudoAbsolute;
+
+  top: auto;
+  left: -100vw;
+
+  width: 200vw;
+
+  background-color: inherit;
+  border-top: 1px solid $border-form-grey;
+}
+
+.review-form__group--impression,
+.review-form__group--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-form__field-wrapper {
+  position: relative;
+
+  display: inline-block;
+  height: $form-field-height;
+}
+
+.review-form__field-wrapper::before {
+  @include pseudoAbsolute;
+
+  top: 0;
+  right: -$form-field-height;
+
+  display: block;
+  width: $form-field-height;
+  height: $form-field-height;
+  margin-right: $form-field-height;
+
+
+  background-color: $bg-form-field-icon;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.review-form__field-wrapper--tel::before {
+  background-image: url("../../img/icon-phone.svg");
+}
+
+.review-form__field-wrapper--email::before {
+  margin-right: 0;
+  background-image: url("../../img/icon-mail.svg");
+}
+
+.review-form__header {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review-form__field {
+  @include resetMargins;
+
+  height: $form-field-height;
+
+  background-color: $bg-light-grey;
+  border: none;
+}
+
+.review-form__field::placeholder {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review-form__field--text {
+  width: 281px;
+  height: 161px;
+}
+
+.review-form__box-label {
+  color: $font-black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  text-align: left;
+}

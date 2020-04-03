@@ -1,0 +1,36 @@
+.location__map {
+  position: relative;
+
+  min-height: 351px;
+
+  background-color: $bg-map;
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.location__map::before {
+  @include pseudoAbsolute;
+  $size: 27px;
+
+  top: calc(50% - 15px);
+  left: calc(50% - 13px);
+
+  width: $size;
+  height: $size;
+
+  background-color: $bg-white;
+  background-image: url("../../img/icon-map-marker.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.location__map--interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100%;
+}

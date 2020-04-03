@@ -1,0 +1,26 @@
+.advice {
+  min-height: 100px;
+  padding-left: 89px;
+
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.advice__header {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advice--house {
+  background-image: url("../../img/icon-house.svg");
+}
+
+.advice--souvenirs {
+  background-image: url("../../img/icon-gift.svg");
+}
+
+.advice--food {
+  background-image: url("../../img/icon-burger.svg");
+}

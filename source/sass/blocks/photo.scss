@@ -1,0 +1,30 @@
+.photo {
+  width: 280px;
+}
+
+.photo__header {
+  color: $font-black;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.photo__author {
+  text-transform: none;
+}
+
+.photo__like-button {
+  width: 23px;
+  height: 21px;
+
+  background-color: $bg-white;
+  background-image: url("../../img/icon-like.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.photo__like-amount {
+  color: $font-black;
+  font-weight: bold;
+}

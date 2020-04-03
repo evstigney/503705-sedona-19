@@ -1,0 +1,38 @@
+@mixin resetMargins {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin setWidth($width) {
+  width: $width;
+  box-sizing: border-box;
+}
+
+@mixin noMarkers {
+  list-style: none;
+}
+
+@mixin pseudoAbsolute {
+  position: absolute;
+
+  content: "";
+}
+
+@mixin buttonBlue {
+  color: $font-white;
+  text-align: center;
+
+  background-color: $bg-blue;
+
+  &:hover {
+    color: $font-white;
+
+    background-color: $bg-hover-blue;
+  }
+
+  &:active {
+    color: rgba($font-white, 0.3);
+
+    background-color: $bg-active-blue;
+  }
+}

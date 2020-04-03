@@ -1,0 +1,12 @@
+.video-clip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-clip__header {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
