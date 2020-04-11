@@ -25,16 +25,18 @@
   @include pseudoAbsolute;
 
   top: calc(100% - 26px);
-  left: 0;
 
   width: 50%;
   height: 26px;
+}
+
+.index-main__banner::before {
+  left: 0;
 
   background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
 }
 
 .index-main__banner::after {
-  z-index: 2;
   left: 50%;
 
   background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
