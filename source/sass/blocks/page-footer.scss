@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   width: 153px;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
 }
 
 .page-footer__social-item {
@@ -65,4 +65,9 @@
 
   color: $font-black;
   line-height: 26px;
+}
+
+.page-footer__academy-logo {
+  height: 42px;
+  padding-top: 4px;
 }
