@@ -3,5 +3,12 @@
 }
 
 .features__lead {
+  width: $mobile-width;
+  margin-bottom: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
   line-height: 26px;
 }
