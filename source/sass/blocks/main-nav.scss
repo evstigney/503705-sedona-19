@@ -6,4 +6,24 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 5;
+
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav__toggle--opened .main-nav__toggle-menu {
+  display: none;
+}
+
+.main-nav__toggle--opened .main-nav__toggle-cross {
+  display: block;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-cross {
+  display: none;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-menu {
+  display: block;
 }
