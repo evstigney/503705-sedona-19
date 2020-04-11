@@ -1,5 +1,56 @@
 .advices {
+  @include resetMargins;
+  @include noMarkers;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
+
+.advices__item {
+  width: $mobile-width;
+  min-height: 100px;
+  padding-left: 70px;
+
+  text-align: left;
+
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 39px;
+}
+
+.advices__item--house {
+  background-image: url("../../img/icon-house.svg");
+  background-position: top left 21px;
+}
+
+.advices__item--souvenirs {
+  background-image: url("../../img/icon-gift.svg");
+  background-size: 32px;
+  background-position: top 3px left 25px;
+}
+
+.advices__item--food {
+  background-image: url("../../img/icon-burger.svg");
+  background-position: top 9px left 18px;
+}
+
+.advices__item-header {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advices__item--souvenirs .advices__item-header {
+  margin-top: 14px;
+}
+
+.advices__item--food .advices__item-header {
+  margin-top: 14px;
 }

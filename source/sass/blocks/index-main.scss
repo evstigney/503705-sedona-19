@@ -11,7 +11,7 @@
   background-image:
     url("../../img/text-sedona-index.svg"),
     url("../../img/bg-back-mobile@1x.jpg");
-  background-position: 
+  background-position:
     center,
     top center;
   background-size:
@@ -41,8 +41,6 @@
 }
 
 .index-main__lead {
-  @include resetMargins;
-  
   width: $mobile-width;
   margin: 0 auto;
   padding-top: 40px;

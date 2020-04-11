@@ -1,8 +1,13 @@
 .features {
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
 }
 
 .features__lead {
+  order: -1;
+
   width: $mobile-width;
   margin-bottom: 26px;
   margin-left: auto;
@@ -11,4 +16,12 @@
   padding-right: 25px;
 
   line-height: 26px;
+}
+
+.features__item:first-of-type {
+  order: -1;
+}
+
+.features__item {
+  order: 1;
 }
