@@ -21,6 +21,11 @@ body {
   background-color: $bg-white;
 }
 
+body > * {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
 a {
   color: $font-black;
   text-decoration: none;
