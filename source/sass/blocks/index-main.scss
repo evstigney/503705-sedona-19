@@ -1,4 +1,8 @@
 .index-main__banner {
+  position: relative;
+  left: calc(50% - 50vw);
+
+  width: 100vw;
   min-height: 389px;
 
   color: $font-white;
@@ -7,8 +11,33 @@
   background-image:
     url("../../img/text-sedona-index.svg"),
     url("../../img/bg-back-mobile@1x.jpg");
-  background-position: center;
+  background-position: 
+    center,
+    top center;
+  background-size:
+    281px,
+    cover;
   background-repeat: no-repeat;
+}
+
+.index-main__banner::before,
+.index-main__banner::after {
+  @include pseudoAbsolute;
+
+  top: calc(100% - 26px);
+  left: 0;
+
+  width: 50%;
+  height: 26px;
+
+  background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
+}
+
+.index-main__banner::after {
+  z-index: 2;
+  left: 50%;
+
+  background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
 }
 
 .index-main__lead {
