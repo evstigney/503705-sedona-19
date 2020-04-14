@@ -21,6 +21,10 @@ body {
   background-color: $bg-white;
 }
 
+body > * {
+  margin: 0 auto;
+}
+
 a {
   color: $font-black;
   text-decoration: none;

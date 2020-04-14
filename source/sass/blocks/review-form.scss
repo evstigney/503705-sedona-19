@@ -9,6 +9,11 @@
 .review-form__group {
   position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  padding-bottom: 5px;
+
   border: none;
 }
 
@@ -24,31 +29,148 @@
   border-top: 1px solid $border-form-grey;
 }
 
-.review-form__group--impression,
-.review-form__group--text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.review-form__header {
+  width: 100%;
+  margin-bottom: 22px;
+
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review-form__label {
+  margin-right: 14px;
+  padding-top: 13px;
+}
+
+.review-form__label--patronymic {
+  margin-right: 16px;
+  padding-top: 16px;
+}
+
+.review-form__label sup {
+  position: relative;
+  top: 4px;
+}
+
+.review-form__field {
+  @include resetMargins;
+
+  flex-grow: 2;
+  width: 55%;
+  height: $form-field-height;
+  margin-bottom: 19px;
+  padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 19px;
+
+  background-color: $bg-form-field;
+  border: none;
+}
+
+.review-form__field::placeholder {
+  color: $font-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review-form__box-label {
+  position: relative;
+
+  width: 100%;
+  height: $box-field-size;
+  margin-bottom: 13px;
+  padding-top: 14px;
+  padding-left: 79px;
+
+  color: $font-black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  text-align: left;
+}
+
+.review-form__box-label--checkbox {
+  margin-bottom: 24px;
+}
+
+.review-form__box-label::before {
+  @include pseudoAbsolute;
+
+  top: 0;
+  left: 0;
+
+  width: $box-field-size;
+  height: $box-field-size;
+
+  background-color: $bg-form-field;
+}
+
+.review-form__box-label--radio::before {
+  border-radius: 50%;
+}
+
+.review-form__box-label--radio::after {
+  @include pseudoAbsolute;
+
+  top: 17px;
+  left: 17px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: $font-dark;
+  border-radius: 50%;
+}
+
+.review-form__box-label--checkbox::after {
+  @include pseudoAbsolute;
+
+  top: 14px;
+  left: 22px;
+
+  width: 13px;
+  height: 21px;
+
+  background-color: transparent;
+  box-shadow: inset -3px -3px 0 0 $checkbox-tick;
+
+  transform: rotate(45deg);
+}
+
+.review-form__box {
+  position: absolute;
+  left: -200vw;
+}
+
+.review-form__box:checked + .review-form__box-label::after {
+  display: block;
+}
+
+.review-form__box + .review-form__box-label::after {
+  display: none;
 }
 
 .review-form__field-wrapper {
   position: relative;
 
-  display: inline-block;
+  width: 100%;
   height: $form-field-height;
+  margin-bottom: 6px;
 }
 
 .review-form__field-wrapper::before {
   @include pseudoAbsolute;
 
   top: 0;
-  right: -$form-field-height;
+  right: 0;
 
   display: block;
   width: $form-field-height;
   height: $form-field-height;
-  margin-right: $form-field-height;
-
 
   background-color: $bg-form-field-icon;
   background-position: center;
@@ -64,39 +186,74 @@
   background-image: url("../../img/icon-mail.svg");
 }
 
-.review-form__header {
-  color: $font-black;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
+.review-form__field-wrapper .review-form__field {
+  width: 100%;
+  padding-right: $form-field-height + 13px;
 }
 
-.review-form__field {
-  @include resetMargins;
-
-  height: $form-field-height;
-
-  background-color: $bg-light-grey;
-  border: none;
+.review-form__group--contacts {
+  padding-bottom: 21px;
 }
 
-.review-form__field::placeholder {
-  color: $font-black;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
+.review-form__group--contacts .review-form__header {
+  margin-bottom: 4px;
+}
+
+.review-form__group--contacts .review-form__label {
+  margin-bottom: 7px;
+  margin-left: 23px;
+}
+
+.review-form__group--contacts .review-form__label:not(:first-of-type) {
+  padding-top: 0;
+}
+
+.review-form__group--contacts .review-form__field {
+  margin-bottom: 0;
+}
+
+.review-form__group--impression {
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+.review-form__group--impression .review-form__header {
+  margin-bottom: 24px;
+}
+
+.review-form__group--sightseeing {
+  padding-bottom: 1px;
+}
+
+.review-form__group--sightseeing .review-form__header {
+  margin-bottom: 18px;
+}
+
+.review-form__group--text {
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.review-form__group--text .review-form__header {
+  margin-bottom: 18px;
 }
 
 .review-form__field--text {
-  width: 281px;
+  width: 100%;
   height: 161px;
+  margin-bottom: 49px;
+  padding-top: 16px;
+
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
-.review-form__box-label {
-  color: $font-black;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: none;
-  text-align: left;
+.review-form__field--text::placeholder {
+  font-size: 16px;
+  line-height: 26px;
 }

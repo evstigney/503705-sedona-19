@@ -1,21 +1,54 @@
 .photo {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
   width: 280px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+}
+
+.photo::before {
+  @include pseudoAbsolute;
+
+  bottom: 0;
+  left: calc(50% - 50vw);
+
+  width: 100vw;
+  height: 1px;
+
+  background-color: rgba($bg-black, 0.1);
 }
 
 .photo__header {
+  margin-bottom: 0;
+
   color: $font-black;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.photo__img {
+  order: -1;
+}
+
 .photo__author {
+  @include resetMargins;
+
   text-transform: none;
+}
+
+.photo__like {
+  @include resetMargins;
+
+  padding-top: 8px;
 }
 
 .photo__like-button {
   width: 23px;
   height: 21px;
+  margin-right: 10px;
 
   background-color: $bg-white;
   background-image: url("../../img/icon-like.svg");

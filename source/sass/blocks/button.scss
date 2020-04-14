@@ -5,7 +5,7 @@
   height: 58px;
   padding-top: 15px;
   padding-bottom: 17px;
-  padding-left: 46px;
+  padding-left: 47px;
   padding-right: 46px;
 
   color: $font-white;
@@ -16,4 +16,10 @@
   text-transform: uppercase;
 
   background-color: $bg-blue;
+}
+
+.button--review-form {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
 }

@@ -1,17 +1,61 @@
+.inner-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-main--form {
+  margin-bottom: 38px;
+}
+
 .inner-main__banner {
-  min-height: 163px;
+  position: relative;
+
+  width: 100vw;
+
+  min-height: 158px;
+  margin-bottom: 38px;
 
   background-color: $bg-banner;
   background-image:
     url("../../img/text-sedona.svg"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-position:
-    center,
+    top 52px center,
     bottom center;
   background-repeat: no-repeat;
+  background-size:
+    231px,
+    246%;
+}
+
+.inner-main__banner::before,
+.inner-main__banner::after {
+  @include pseudoAbsolute;
+
+  top: calc(100% - 26px);
+
+  width: 50%;
+  height: 26px;
+}
+
+.inner-main__banner::before {
+  left: 0;
+
+  background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
+}
+
+.inner-main__banner::after {
+  left: 50%;
+
+  background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
 }
 
 .inner-main__header {
+  @include resetMargins;
+
+  margin-bottom: 26px;
+
   color: $font-black;
   font-size: 18px;
   line-height: 26px;
@@ -20,5 +64,20 @@
 }
 
 .inner-main__lead {
+  @include resetMargins;
+
+  width: 280px;
+  margin-bottom: 27px;
+
   text-align: center;
+}
+
+.inner-main--form .inner-main__lead {
+  margin-bottom: 17px;
+}
+
+.inner-main__photoes {
+  width: 100vw;
+
+  border-top: 1px solid rgba($bg-black, 0.1);
 }
