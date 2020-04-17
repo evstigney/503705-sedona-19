@@ -68,7 +68,6 @@
     top: 0;
     left: 0;
 
-    width: 100%;
     min-height: 518px;
 
     background-image:
@@ -88,6 +87,11 @@
 
   .index-main__lead {
     position: relative;
+
+    width: 585px;
+    padding-top: 49px;
+
+    font-size: 21px;
   }
 
   .index-main__lead::before,
@@ -115,6 +119,8 @@
 
 @media (min-width: $desktop-width) {
   .index-main__banner {
+    width: 100%;
+
     background-image:
       url("../../img/text-sedona-index.svg"),
       url("../../img/bg-back-desktop@1x.jpg");

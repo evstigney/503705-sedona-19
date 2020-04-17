@@ -50,14 +50,22 @@
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
           <div class="features__item feature feature--big">
-            <h3 class="feature__header">
-              <span class="feature__number">№1</span>
-              Настоящий городок
-            </h3>
-            <p class="feature__text">
-              Седона не аттракцион для туристов, там течет своя жизнь
-            </p>
-            <img class="feature__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Городской пейзаж Седоны">
+            <div class="feature__text-wrapper">
+              <h3 class="feature__header">
+                <span class="feature__number">№1</span>
+                Настоящий городок
+              </h3>
+              <p class="feature__text">
+                Седона не аттракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
+            <div class="feature__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+                <img class="feature__img" src="img/main-city-mobile@1x.jpg" alt="Городской пейзаж Седоны">
+              </picture>
+            </div>
           </div>
           <div class="features__item feature feature--big">
             <h3 class="feature__header">

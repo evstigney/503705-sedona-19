@@ -25,3 +25,16 @@
 .features__item {
   order: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__lead {
+    width: 541px;
+    margin-top: 17px;
+    margin-bottom: 49px;
+  }
+}
