@@ -1,3 +1,16 @@
 .index-body__header {
   margin-bottom: 55px;
 }
+
+@media (min-width: $tablet-width) {
+  .index-body__header {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-body__wrapper {
+    background-color: $bg-white;
+    box-shadow: 0 5px 15px 0 rgba($bg-black, 0.2);
+  }
+}

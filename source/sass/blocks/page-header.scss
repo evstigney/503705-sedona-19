@@ -14,3 +14,15 @@
 .page-header__nav--inner {
   margin-bottom: 53px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    left: calc(50% - 95px);
+  }
+}
