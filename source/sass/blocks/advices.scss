@@ -81,7 +81,7 @@
     margin-right: 98px;
   }
 
-  .advices__item--souvenirs {
+  .advices__item.advices__item--souvenirs {
     order: 2;
     margin-right: 0;
 
@@ -117,5 +117,29 @@
     width: 158px;
 
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advices {
+    width: $desktop-width;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advices__item-text {
+    width: 258px;
+  }
+
+  .advices__item--food .advices__item-text {
+    width: 286px;
+  }
+
+  .advices__item--food {
+    background-position: top 4px center;
+  }
+
+  .advices__item.advices__item--souvenirs {
+    background-position: top center;
   }
 }
