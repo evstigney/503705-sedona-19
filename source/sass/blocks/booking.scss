@@ -24,6 +24,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .booking {
+    padding-bottom: 57px;
+  }
+
   .booking__lead {
     margin-top: 55px;
     margin-bottom: 17px;
@@ -42,6 +46,10 @@
 }
 
 @media (min-width: 1200px) {
+  .booking {
+    padding-bottom: 67px;
+  }
+
   .booking__text {
     margin-bottom: 48px;
   }
