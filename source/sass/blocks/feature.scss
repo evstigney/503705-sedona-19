@@ -56,6 +56,7 @@
 
 .feature--big .feature__header {
   margin-top: 18px;
+
   color: inherit;
 }
 
@@ -112,6 +113,13 @@
 
 .feature__img {
   display: block;
+}
+
+.feature__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -217,6 +225,11 @@
     width: 100%;
   }
 
+  .feature--big:nth-of-type(2) .feature__text {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
   .feature__header {
     width: 100%;
     margin: 0;
@@ -232,5 +245,9 @@
   .feature__img {
     position: relative;
     top: -71px;
+  }
+
+  .feature--big:nth-of-type(2) .feature__img {
+    top: -76px;
   }
 }

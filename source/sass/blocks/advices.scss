@@ -143,3 +143,9 @@
     background-position: top center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advices {
+    padding-bottom: 68px;
+  }
+}
