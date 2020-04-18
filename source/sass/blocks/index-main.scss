@@ -115,6 +115,10 @@
 
     background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
   }
+
+  .index-main__advices {
+    width: 500px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -130,5 +134,9 @@
   .index-main__banner::after {
     top: calc(100% - 57px);
     height: 57px;
+  }
+
+  .index-main__advices {
+    width: 100%;
   }
 }
