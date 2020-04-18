@@ -9,3 +9,9 @@
 .inner-body__main {
   margin-bottom: 41px;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-body__header {
+    margin-bottom: 0;
+  }
+}
