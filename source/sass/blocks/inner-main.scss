@@ -90,10 +90,10 @@
     background-image:
       url("../../img/text-sedona.svg"),
       url("../../img/bg-back-tablet@1x.jpg");
-    background-size: 455px, 98%;
+    background-size: 455px, cover;
     background-position:
       top 94px center,
-      bottom center;
+      bottom -3px center;
   }
 
   .inner-main__banner::before,
@@ -137,9 +137,12 @@
 
   .inner-main__lead {
     width: 435px;
+    margin-bottom: 69px;
   }
 
   .inner-main__photoes {
+    width: 648px;
+
     border-top: none;
   }
 }
