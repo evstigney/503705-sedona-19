@@ -143,3 +143,29 @@
     border-top: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .inner-main__banner {
+    width: 100%;
+    min-height: 301px;
+
+    background-image:
+      url("../../img/text-sedona.svg"),
+      url("../../img/bg-back-desktop@1x.jpg");
+    background-size: 455px, cover;
+    background-position:
+      top 102px center,
+      bottom center;
+  }
+
+  .inner-main__banner::before,
+  .inner-main__banner::after {
+    top: calc(100% - 57px);
+
+    height: 57px;
+  }
+
+  .inner-main__header {
+    padding-top: 111px;
+  }
+}
