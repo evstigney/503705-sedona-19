@@ -121,10 +121,17 @@
   }
 
   .feature--big {
+    @include resetMargins;
+
+    position: relative;
+
     flex-direction: row;
 
     width: 100%;
-    padding-left: 48px;
+  }
+
+  .feature--big:nth-of-type(2n) {
+    flex-direction: row-reverse;
   }
 
   .feature--big:first-of-type {
