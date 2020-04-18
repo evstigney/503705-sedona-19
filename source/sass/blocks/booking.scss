@@ -22,3 +22,27 @@
   width: 280px;
   margin-bottom: 36px;
 }
+
+@media (min-width: $tablet-width) {
+  .booking__lead {
+    margin-top: 55px;
+    margin-bottom: 17px;
+
+    font-size: 30px;
+  }
+
+  .booking__text {
+    width: 440px;
+    margin-bottom: 42px;
+  }
+
+  .booking__button {
+    width: 460px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .booking__text {
+    margin-bottom: 48px;
+  }
+}
