@@ -55,3 +55,17 @@
     height: 499px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .video-clip {
+    padding-top: 68px;
+  }
+
+  .video-clip__lead {
+    margin-bottom: 72px;
+  }
+
+  .video-clip__clip {
+    width: 800px;
+  }
+}
