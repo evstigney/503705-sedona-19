@@ -152,6 +152,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .inner-main--form {
+    margin-bottom: 67px;
+  }
+
   .inner-main__banner {
     width: 100%;
     min-height: 301px;

@@ -487,4 +487,26 @@
   .review-form__hidden-text {
     @include visuallyHidden;
   }
+
+  .review-form__group--sightseeing {
+    padding-left: 0;
+  }
+
+  .review-form__group--sightseeing .review-form__header {
+    margin-right: 280px;
+    margin-left: 280px;
+  }
+
+  .review-form__box-label--checkbox:nth-of-type(4n+3) {
+    width: 236px;
+  }
+
+  .review-form__box-label--checkbox:nth-of-type(4n) {
+    width: 205px;
+    padding-right: 0;
+  }
+
+  .review-form__box-label--checkbox {
+    margin-bottom: 30px;
+  }
 }
