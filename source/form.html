@@ -39,10 +39,10 @@
       <div class="inner-main__banner"></div>
       <h1 class="inner-main__header">Оставьте свой отзыв</h1>
       <p class="inner-main__lead">
-        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримкечательностях.
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.
       </p>
       <form class="inner-main__review-form review-form">
-        <div class="review-form__group">
+        <div class="review-form__group review-form__group--name">
           <p class="review-form__header">Представьтесь:</p>
           <label class="review-form__label" for="nameField">Имя<sup>*</sup>:</label>
           <input class="review-form__field" type="text" name="name" id="nameField" placeholder="Петр" required>
@@ -85,8 +85,11 @@
         <div class="review-form__group review-form__group--text">
           <p class="review-form__header">Опишите свои эмоции:</p>
           <textarea class="review-form__field review-form__field--text" name="review" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-          <button class="review-form__button button button--review-form" type="submit">Отправить отзыв</button>
         </div>
+        <button class="review-form__button button button--review-form" type="submit">Отправить отзыв</button>
+        <p class="review-form__notice">
+          * — Обязательные поля
+        </p>
       </form>
     </main>
     <footer class="inner-body__footer page-footer">

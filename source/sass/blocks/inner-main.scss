@@ -83,6 +83,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .inner-main--form {
+    margin-bottom: 60px;
+  }
+
   .inner-main__banner {
     min-height: 290px;
     margin-bottom: 0;
