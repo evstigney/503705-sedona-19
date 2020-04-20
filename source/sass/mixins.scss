@@ -35,6 +35,10 @@
 
     background-color: $bg-active-blue;
   }
+
+  &--disabled {
+    background-color: $bg-button-disabled;
+  }
 }
 
 @mixin visuallyHidden {
