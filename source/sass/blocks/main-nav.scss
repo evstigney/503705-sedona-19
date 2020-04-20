@@ -12,6 +12,24 @@
   border: none;
 }
 
+.main-nav__toggle-cross {
+  fill: $bg-white;
+}
+
+.main-nav__toggle-menu {
+  fill: $bg-blue;
+}
+
+.main-nav__toggle:hover .main-nav__toggle-cross,
+.main-nav__toggle:hover .main-nav__toggle-menu {
+  fill-opacity: 0.6;
+}
+
+.main-nav__toggle:active .main-nav__toggle-cross,
+.main-nav__toggle:active .main-nav__toggle-menu {
+  fill-opacity: 0.3;
+}
+
 .main-nav__toggle--opened .main-nav__toggle-menu {
   display: none;
 }

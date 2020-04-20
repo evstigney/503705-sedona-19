@@ -18,8 +18,16 @@
         </a>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle main-nav__toggle--opened" type="button">
-            <img class="main-nav__toggle-cross" src="img/icon-cross.svg" width="24" height="24" alt="Закрыть меню">
-            <img class="main-nav__toggle-menu" src="img/icon-menu.svg" width="24" height="24" alt="Открыть меню">
+            <svg width="24px" height="24px">
+              <polygon class="main-nav__toggle-cross" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " aria-labelledby="crossTitle"/>
+              <title id="crossTitle">Закрыть меню</title>
+              <g class="main-nav__toggle-menu" aria-labelledby="menuTitle">
+                <rect width="22.928" height="3.964"/>
+                <rect y="9.009" width="22.928" height="3.964"/>
+                <rect y="18.018" width="22.928" height="3.964"/>
+              </g>
+              <title id="menuTitle">Открыть меню</title>
+            </svg>
           </button>
           <ul class="main-nav__list page-nav">
             <li class="page-nav__item page-nav__item--active">
