@@ -41,6 +41,24 @@
   }
 }
 
+@mixin anchorBlack {
+  color: $font-black;
+
+  background-color: $bg-white;
+
+  &:hover {
+    color: $font-hover-blue;
+
+    background-color: inherit;
+  }
+
+  &:active {
+    color: rgba($font-black, 0.3);
+
+    background-color: inherit;
+  }
+}
+
 @mixin visuallyHidden {
   position: absolute;
 
