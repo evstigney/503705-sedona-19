@@ -56,3 +56,87 @@
   font-weight: 700;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .index-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-main__banner {
+    top: 0;
+    left: 0;
+
+    min-height: 518px;
+
+    background-image:
+      url("../../img/text-sedona-index.svg"),
+      url("../../img/bg-back-tablet@1x.jpg");
+    background-position:
+      top 77px center,
+      top center;
+    background-size: 461px, cover;
+  }
+
+  .index-main__banner::before,
+  .index-main__banner::after {
+    top: calc(100% - 36px);
+    height: 36px;
+  }
+
+  .index-main__lead {
+    position: relative;
+
+    width: 585px;
+    padding-top: 49px;
+
+    font-size: 21px;
+  }
+
+  .index-main__lead::before,
+  .index-main__lead::after {
+    @include pseudoAbsolute;
+
+    top: -57px;
+
+    width: 351px;
+    height: 57px;
+  }
+
+  .index-main__lead::before {
+    right: 50%;
+
+    background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
+  }
+
+  .index-main__lead::after {
+    left: 50%;
+
+    background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
+  }
+
+  .index-main__advices {
+    width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-main__banner {
+    width: 100%;
+
+    background-image:
+      url("../../img/text-sedona-index.svg"),
+      url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .index-main__banner::before,
+  .index-main__banner::after {
+    top: calc(100% - 57px);
+    height: 57px;
+  }
+
+  .index-main__advices {
+    width: 100%;
+  }
+}

@@ -9,3 +9,18 @@
 .inner-body__main {
   margin-bottom: 41px;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-body__header {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-body__wrapper {
+    width: $desktop-width;
+
+    background-color: $bg-white;
+    box-shadow: 0 5px 15px 0 rgba($bg-black, 0.2);
+  }
+}

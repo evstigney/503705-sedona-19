@@ -54,3 +54,98 @@
 .advices__item--food .advices__item-header {
   margin-top: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .advices {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 58px;
+    padding-left: 49px;
+    padding-bottom: 46px;
+  }
+
+  .advices__item {
+    @include resetMargins;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    background-position: top 1px center;
+    background-size: 75px;
+  }
+
+  .advices__item:not(:nth-of-type(3n)) {
+    margin-right: 98px;
+  }
+
+  .advices__item.advices__item--souvenirs {
+    order: 2;
+    margin-right: 0;
+
+    background-position: top left 47px;
+    background-size: 62px;
+  }
+
+  .advices__item--food {
+    margin-right: 98px;
+
+    background-position: top 4px left 41px;
+  }
+
+  .advices__item--souvenirs .advices__item-header,
+  .advices__item--food .advices__item-header {
+    @include resetMargins;
+
+    margin-bottom: 11px;
+    padding-top: 2px;
+  }
+
+  .advices__item-header {
+    @include resetMargins;
+
+    margin-bottom: 11px;
+    padding-top: 2px;
+
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .advices__item-text {
+    width: 158px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advices {
+    width: $desktop-width;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advices__item-text {
+    width: 258px;
+  }
+
+  .advices__item--food .advices__item-text {
+    width: 286px;
+  }
+
+  .advices__item--food {
+    background-position: top 4px center;
+  }
+
+  .advices__item.advices__item--souvenirs {
+    background-position: top center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advices {
+    padding-bottom: 68px;
+  }
+}

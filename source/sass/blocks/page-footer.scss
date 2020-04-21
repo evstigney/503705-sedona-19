@@ -71,3 +71,55 @@
   height: 42px;
   padding-top: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 37px;
+    padding-left: 60px;
+    padding-right: 55px;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .page-footer__hashtag {
+    margin-top: 9px;
+    margin-right: 113px;
+  }
+
+  .page-footer__social-list {
+    width: 152px;
+    margin-right: 120px;
+  }
+
+  .page-footer__copyright {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .page-footer__academy-logo {
+    position: relative;
+    right: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 34px;
+    padding-left: 120px;
+  }
+
+  .page-footer__hashtag {
+    margin-right: 268px;
+  }
+
+  .page-footer__social-list {
+    margin-right: 276px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 3px;
+  }
+}
