@@ -27,6 +27,12 @@
   background-size:
     231px,
     246%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../../img/text-sedona.svg"),
+      url("../../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .inner-main__banner::before,
@@ -98,6 +104,12 @@
     background-position:
       top 94px center,
       bottom -3px center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../../img/text-sedona.svg"),
+        url("../../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .inner-main__banner::before,
@@ -167,6 +179,12 @@
     background-position:
       top 102px center,
       bottom center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../../img/text-sedona.svg"),
+        url("../../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .inner-main__banner::before,
