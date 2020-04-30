@@ -23,3 +23,15 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .button--review-form {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--review-form {
+    width: 480px;
+  }
+}

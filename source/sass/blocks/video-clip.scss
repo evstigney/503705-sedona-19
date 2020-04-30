@@ -25,3 +25,47 @@
 
   text-align: center;
 }
+
+.video-clip__clip {
+  width: 100vw;
+  height: 266px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-clip {
+    padding-top: 66px;
+  }
+
+  .video-clip__header {
+    @include resetMargins;
+
+    font-size: 30px;
+  }
+
+  .video-clip__lead {
+    width: 415px;
+    margin-top: 31px;
+    margin-bottom: 73px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .video-clip__clip {
+    width: 648px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-clip {
+    padding-top: 68px;
+  }
+
+  .video-clip__lead {
+    margin-bottom: 72px;
+  }
+
+  .video-clip__clip {
+    width: 800px;
+  }
+}
