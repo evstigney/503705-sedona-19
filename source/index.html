@@ -13,7 +13,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="/img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" media="(max-width: 768px)" src="img/logo-sedona-mobile.svg" alt="Седона - небольшой городок в Аризоне.">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона - небольшой городок в Аризоне.">
           </picture>
         </a>
         <nav class="page-header__nav main-nav main-nav--no-js">
@@ -69,9 +69,12 @@
             </div>
             <div class="feature__img-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x" srcset="img/main-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x" srcset="img/main-city-table@2x.jpg 2x">
-                <img class="feature__img" src="img/main-city-mobile@1x.jpg 1x" srcset="img/main-city-mobile@2x.jpg 2x" alt="Городской пейзаж Седоны">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="feature__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Городской пейзаж Седоны">
               </picture>
             </div>
           </div>
@@ -87,9 +90,12 @@
             </div>
             <div class="feature__img-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x" srcset="img/main-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x" srcset="img/main-bridge-tablet@2x.jpg 2x">
-                <img class="feature__img" src="img/main-bridge-mobile@1x.jpg 1x" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола в Седоне">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="feature__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола в Седоне">
               </picture>
             </div>
           </div>
@@ -157,6 +163,7 @@
             <span class="visually-hidden">Седона расположена в штате Аризона</span>
             <div class="location__map location__map--interactive"></div>
           </div>
+        </section>
       </main>
       <footer class="index-body__footer page-footer">
         <p class="page-footer__hashtag">
