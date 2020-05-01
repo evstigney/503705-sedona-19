@@ -26,7 +26,7 @@
   width: 200vw;
 
   background-color: inherit;
-  border-top: 1px solid $border-form-grey;
+  border-top: 1px solid $bg-silver-grey;
 }
 
 .review-form__header {
@@ -62,17 +62,31 @@
   width: 55%;
   height: $form-field-height;
   margin-bottom: 19px;
-  padding-top: 2px;
-  padding-left: 20px;
+  padding-bottom: 3px;
+  padding-left: 22px;
   padding-right: 19px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 
   background-color: $bg-form-field;
   border: none;
+
+  &:hover {
+    background-color: $bg-silver-grey;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $bg-white;
+    outline: 4px solid $bg-silver-grey;
+  }
 }
 
 .review-form__field::placeholder {
   color: $font-black;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
 }
@@ -119,8 +133,8 @@
   top: 17px;
   left: 17px;
 
-  width: 22px;
-  height: 22px;
+  width: 21px;
+  height: 21px;
 
   background-color: $font-dark;
   border-radius: 50%;
@@ -152,6 +166,19 @@
 
 .review-form__box + .review-form__box-label::after {
   display: none;
+}
+
+.review-form__box-label:hover::before,
+.review-form__box:focus + .review-form__box-label::before {
+  background-color: $bg-silver-grey;
+}
+
+.review-form__box-label:active::before {
+  background-color: $bg-dark-silver-grey;
+}
+
+.review-form__box-label:active::after {
+  opacity: 0.3;
 }
 
 .review-form__field-wrapper {
@@ -256,4 +283,253 @@
 .review-form__field--text::placeholder {
   font-size: 16px;
   line-height: 26px;
+}
+
+.review-form__notice {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 36px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .review-form__group::before {
+    display: none;
+  }
+
+  .review-form__group {
+    width: 100%;
+  }
+
+  .review-form__group--impression {
+    position: relative;
+    order: -1;
+  }
+
+  .review-form__group--impression::before {
+    @include pseudoAbsolute;
+
+    top: 25px;
+    left: auto;
+    right: 0;
+
+    display: block;
+    width: 1px;
+    height: calc(100% - 60px);
+
+    background-color: $border-form-silver;
+  }
+
+  .review-form__group--impression,
+  .review-form__group--name {
+    width: 50%;
+    padding-bottom: 0;
+  }
+
+  .review-form__header {
+    margin-bottom: 57px;
+
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .review-form__group--impression .review-form__header {
+    margin-bottom: 59px;
+  }
+
+  .review-form__box-label {
+    margin-bottom: 22px;
+    padding-left: 76px;
+  }
+
+  .review-form__group--name {
+    padding-left: 58px;
+  }
+
+  .review-form__group--contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+
+    border-top: 1px solid $border-form-silver;
+  }
+
+  .review-form__group--contacts .review-form__header {
+    @include resetMargins;
+
+    position: relative;
+    bottom: 13px;
+
+    align-self: center;
+    width: 403px;
+
+    text-align: center;
+
+    background-color: $bg-white;
+  }
+
+  .review-form__group--contacts .review-form__label {
+    padding-top: 6px;
+  }
+
+  .review-form__field-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .review-form__group--sightseeing {
+    margin-top: 38px;
+    margin-bottom: 47px;
+    padding-left: 95px;
+
+    border-top: 1px solid $border-form-silver;
+  }
+
+  .review-form__group--sightseeing .review-form__header {
+    @include resetMargins;
+
+    position: relative;
+    bottom: 26px;
+
+    margin-bottom: 16px;
+    margin-left: 31px;
+    margin-right: 123px;
+
+    text-align: center;
+
+    background-color: $bg-white;
+  }
+
+  .review-form__box-label--checkbox {
+    width: 259px;
+    margin-bottom: 32px;
+    padding-left: 81px;
+    padding-right: 15px;
+  }
+
+  .review-form__group--text {
+    margin-bottom: 8px;
+
+    border-top: 1px solid $border-form-silver;
+  }
+
+  .review-form__group--text .review-form__header {
+    @include resetMargins;
+
+    position: relative;
+    bottom: 13px;
+
+    width: 396px;
+    margin-bottom: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-align: center;
+
+    background-color: $bg-white;
+  }
+
+  .review-form__notice {
+    display: block;
+    margin-top: 19px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    padding-top: 21px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .review-form__group--impression .review-form__header {
+    padding-right: 47px;
+
+    text-align: center;
+  }
+
+  .review-form__box-label--radio {
+    padding-left: 80px;
+  }
+
+  .review-form__box-label--radio::before {
+    left: 3px;
+  }
+
+  .review-form__box-label--radio::after {
+    left: 21px;
+  }
+
+  .review-form__group--impression::before {
+    height: calc(100% - 47px);
+  }
+
+  .review-form__group--name {
+    padding-left: 80px;
+  }
+
+  .review-form__group--name .review-form__field {
+    width: 70%;
+  }
+
+  .review-form__group--contacts {
+    flex-direction: row;
+    margin-top: 58px;
+  }
+
+  .review-form__group--contacts .review-form__header {
+    margin-bottom: 61px;
+    margin-left: 279px;
+    margin-right: 270px;
+  }
+
+  .review-form__group--contacts .review-form__label {
+    margin-left: 0;
+    margin-right: 17px;
+    padding-top: 13px;
+  }
+
+  .review-form__group--contacts .review-form__label:not(:first-of-type) {
+    padding-top: 12px;
+  }
+
+  .review-form__field-wrapper {
+    width: 316px;
+  }
+
+  .review-form__field-wrapper:first-of-type {
+    margin-right: 79px;
+  }
+
+  .review-form__hidden-text {
+    @include visuallyHidden;
+  }
+
+  .review-form__group--sightseeing {
+    padding-left: 0;
+  }
+
+  .review-form__group--sightseeing .review-form__header {
+    margin-right: 280px;
+    margin-left: 280px;
+  }
+
+  .review-form__box-label--checkbox:nth-of-type(4n+3) {
+    width: 236px;
+  }
+
+  .review-form__box-label--checkbox:nth-of-type(4n) {
+    width: 205px;
+    padding-right: 0;
+  }
+
+  .review-form__box-label--checkbox {
+    margin-bottom: 30px;
+  }
 }
