@@ -49,6 +49,8 @@
   }
 
   .page-nav__item a {
+    @include anchorBlack;
+
     position: static;
 
     width: auto;
@@ -56,13 +58,23 @@
     padding-left: 25px;
     padding-right: 25px;
 
-    color: $font-black;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
 
-    background-color: $bg-white;
     box-shadow: none;
+  }
+
+  .page-nav__item--active a {
+    color: $font-brown;
+
+    &:hover {
+      color: $font-dark-brown;
+    }
+
+    &:active {
+      color: rgba($font-brown, 0.3);
+    }
   }
 
   .page-nav__item:first-of-type a {
