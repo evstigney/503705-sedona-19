@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body class="index-body">
     <div class="index-body__wrapper">
@@ -156,7 +156,7 @@
           <h2 class="visually-hidden">Местоположение</h2>
           <div class="location__map">
             <span class="visually-hidden">Седона расположена в штате Аризона</span>
-            <div class="location__map location__map--interactive"></div>
+            <div class="location__map location__map--interactive" id="map"></div>
           </div>
         </section>
       </main>
@@ -200,6 +200,7 @@
       </footer>
     </div>
     <script src="js/menu.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1a4gRDY0iZ1WLCSKeqjaCfPm6gDjSukM&callback=initMap"></script>
     <script src="js/picturefill.min.js" async defer></script>
     <script src="js/svgxuse.min.js" async defer></script>
   </body>
