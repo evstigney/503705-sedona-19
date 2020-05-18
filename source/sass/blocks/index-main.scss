@@ -131,6 +131,10 @@
   .index-main__advices {
     width: 500px;
   }
+
+  .index-main__features {
+    width: $tablet-width;
+  }
 }
 
 @media (min-width: $desktop-width) {
