@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="inner-body">
+    <div class="svg-sprite">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="inner-body__wrapper">
       <header class="inner-body__header page-header">
         <a class="page-header__logo" href="index.html">
@@ -20,8 +23,8 @@
         <nav class="page-header__nav main-nav main-nav--no-js">
           <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <svg width="24px" height="24px">
-              <use  class="main-nav__toggle-cross" xlink:href="./img/sprite.svg#menuCross"></use>
-              <use  class="main-nav__toggle-menu" xlink:href="./img/sprite.svg#menuBurger"></use>
+              <use  class="main-nav__toggle-cross" xlink:href="#menuCross"></use>
+              <use  class="main-nav__toggle-menu" xlink:href="#menuBurger"></use>
             </svg>
           </button>
           <ul class="main-nav__list page-nav">
@@ -172,17 +175,17 @@
               <div class="video__control-wrapper">
                 <button class="video__control-button video__control-button--repeat">
                   <svg width="16px" height="20px">
-                    <use xlink:href="./img/sprite.svg#repeatButton"></use>
+                    <use xlink:href="#repeatButton"></use>
                   </svg>
                 </button>
                 <button class="video__control-button video__control-button--subtitles">
                   <svg width="32px" height="20px">
-                    <use xlink:href="./img/sprite.svg#subtitlesButton"></use>
+                    <use xlink:href="#subtitlesButton"></use>
                   </svg>
                 </button>
                 <button class="video__control-button video__control-button--deploy">
                   <svg width="20px" height="20px">
-                    <use xlink:href="./img/sprite.svg#deployButton"></use>
+                    <use xlink:href="#deployButton"></use>
                   </svg>
                 </button>
               </div>
@@ -198,7 +201,7 @@
           <li class="page-footer__social-item page-footer__social-item--twitter">
             <a href="https://twitter.com">
               <svg width="18px" height="15px">
-                <use xlink:href="./img/sprite.svg#iconTwitter"></use>
+                <use xlink:href="#iconTwitter"></use>
               </svg>
               <span class="visually-hidden">Twitter</span>
             </a>
@@ -206,7 +209,7 @@
           <li class="page-footer__social-item page-footer__social-item--facebook">
             <a href="https://facebook.com">
               <svg width="9px" height="19px">
-                <use xlink:href="./img/sprite.svg#iconFacebook"></use>
+                <use xlink:href="#iconFacebook"></use>
               </svg>
               <span class="visually-hidden">Facebook</span>
             </a>
@@ -214,7 +217,7 @@
           <li class="page-footer__social-item page-footer__social-item--youtube">
             <a href="https://youtube.com">
               <svg width="20px" height="14px">
-                <use xlink:href="./img/sprite.svg#iconYoutube"></use>
+                <use xlink:href="#iconYoutube"></use>
               </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -223,7 +226,7 @@
         <p class="page-footer__copyright">
           Разработано<a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27px" height="34px">
-              <use xlink:href="./img/sprite.svg#iconHTMLAcademy"></use>
+              <use xlink:href="#iconHTMLAcademy"></use>
             </svg>
           </a>
         </p>
