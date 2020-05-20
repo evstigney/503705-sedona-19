@@ -26,6 +26,10 @@
 
   width: 320px;
   height: 201px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    height: 189px;
+  }
 }
 
 .video__control {
