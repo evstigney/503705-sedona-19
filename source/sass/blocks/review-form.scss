@@ -66,6 +66,7 @@
   padding-left: 22px;
   padding-right: 19px;
 
+  font-family: "PT Sans", "Trebuchet MS", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -84,12 +85,7 @@
   }
 }
 
-.review-form__field::placeholder,
-<<<<<<< HEAD
-.review-form__field--text {
-=======
-.review-form__field {
->>>>>>> 288f0b3f5d837315da3c985a2640e58a89a78d90
+.review-form__field::placeholder {
   color: $font-black;
   font-family: "PT Sans", "Trebuchet MS", "Arial", sans-serif;
   font-size: 16px;
