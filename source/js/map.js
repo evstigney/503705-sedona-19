@@ -1,3 +1,6 @@
+'use strict';
+
+document.querySelector(`.location__map--interactive`).style.display = "block";
 
 ymaps.ready(init);
 function init(){
