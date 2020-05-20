@@ -129,7 +129,11 @@
   }
 
   .index-main__advices {
-    width: 500px;
+    width: $tablet-width;
+  }
+
+  .index-main__features {
+    width: $tablet-width;
   }
 
   .index-main__features {
