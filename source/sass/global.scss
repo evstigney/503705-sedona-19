@@ -43,6 +43,10 @@ img {
   height: auto;
 }
 
+.svg-sprite {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   body > * {
     width: $tablet-width;
