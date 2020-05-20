@@ -6,6 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Седона. Форма отзыва.</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body class="inner-body">
     <div class="svg-sprite">
@@ -23,8 +25,8 @@
         <nav class="page-header__nav main-nav main-nav--no-js">
           <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <svg width="24px" height="24px">
-              <use  class="main-nav__toggle-cross" xlink:href="./img/sprite.svg#menuCross"></use>
-              <use  class="main-nav__toggle-menu" xlink:href="./img/sprite.svg#menuBurger"></use>
+              <use  class="main-nav__toggle-cross" xlink:href="#menuCross"></use>
+              <use  class="main-nav__toggle-menu" xlink:href="#menuBurger"></use>
             </svg>
           </button>
           <ul class="main-nav__list page-nav">
@@ -108,7 +110,7 @@
           <li class="page-footer__social-item page-footer__social-item--twitter">
             <a href="https://twitter.com">
               <svg width="18px" height="15px">
-                <use xlink:href="./img/sprite.svg#iconTwitter"></use>
+                <use xlink:href="#iconTwitter"></use>
               </svg>
               <span class="visually-hidden">Twitter</span>
             </a>
@@ -116,7 +118,7 @@
           <li class="page-footer__social-item page-footer__social-item--facebook">
             <a href="https://facebook.com">
               <svg width="9px" height="19px">
-                <use xlink:href="./img/sprite.svg#iconFacebook"></use>
+                <use xlink:href="#iconFacebook"></use>
               </svg>
               <span class="visually-hidden">Facebook</span>
             </a>
@@ -124,7 +126,7 @@
           <li class="page-footer__social-item page-footer__social-item--youtube">
             <a href="https://youtube.com">
               <svg width="20px" height="14px">
-                <use xlink:href="./img/sprite.svg#iconYoutube"></use>
+                <use xlink:href="#iconYoutube"></use>
               </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -133,7 +135,7 @@
         <p class="page-footer__copyright">
           Разработано<a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27px" height="34px">
-              <use xlink:href="./img/sprite.svg#iconHTMLAcademy"></use>
+              <use xlink:href="#iconHTMLAcademy"></use>
             </svg>
           </a>
         </p>
