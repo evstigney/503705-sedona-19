@@ -161,6 +161,10 @@
 
     border-top: none;
   }
+
+  .inner-main__review-form {
+    width: $tablet-width;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -204,5 +208,9 @@
 
   .inner-main__photoes {
     width: 100%;
+  }
+
+  .inner-main__review-form {
+    width: $desktop-width;
   }
 }
