@@ -11,6 +11,8 @@ html {
 body {
   @include resetMargins;
 
+  overflow-x: hidden;
+
   color: $font-dark;
   font-family: "PT Sans", "Trebuchet MS", "Arial", sans-serif;
   font-size: 14px;
