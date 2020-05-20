@@ -7,6 +7,7 @@
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -46,7 +47,7 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-image: url("../img/bg-map-tablet@1x.jpg");
     }
   }
 
