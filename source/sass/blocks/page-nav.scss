@@ -50,6 +50,10 @@
     background-color: $bg-white;
   }
 
+  .page-nav__item {
+    max-width: 155px;
+  }
+
   .page-nav__item a {
     @include anchorBlack;
 
@@ -101,12 +105,20 @@
     padding-right: 27px;
   }
 
-  .page-nav__item:nth-of-type(4n+2) {
+  .page-nav__item:nth-of-type(4n + 2) {
     margin-right: 161px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-nav__item {
+    max-width: 234px;
+  }
+
+  .page-nav__item:nth-of-type(4n+2) {
+    margin-right: 161px;
+  }
+
   .page-nav__item:nth-of-type(4n+3) {
     margin-left: auto;
   }

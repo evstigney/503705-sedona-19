@@ -76,6 +76,7 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     min-height: 56px;
   }
 }

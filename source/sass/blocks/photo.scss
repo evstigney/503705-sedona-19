@@ -132,6 +132,8 @@
 @media (min-width: $desktop-width) {
   .photo {
     padding-bottom: 0;
+
+    background-color: $bg-black;
   }
 
   .photo__header,
