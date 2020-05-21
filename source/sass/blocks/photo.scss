@@ -45,6 +45,7 @@
 .photo__like {
   @include resetMargins;
 
+  display: flex;
   padding-top: 8px;
 }
 
@@ -61,6 +62,8 @@
 }
 
 .photo__like-amount {
+  display: block;
+
   color: $font-black;
   font-weight: bold;
 }
@@ -146,6 +149,10 @@
   .photo__header {
     padding-top: 15px;
     padding-left: 21px;
+  }
+
+  .photo--big .photo__header {
+    margin-top: 0;
   }
 
   .photo__author-wrapper {
