@@ -32,6 +32,10 @@
   background-position: top 3px left 25px;
 }
 
+.advices__item-break {
+  display: none;
+}
+
 .advices__item--food {
   background-image: url("../img/icon-burger.svg");
   background-position: top 9px left 18px;
@@ -120,9 +124,11 @@
 
 @media (min-width: $desktop-width) {
   .advices {
+    justify-content: space-between;
     width: $desktop-width;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-bottom: 68px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   .advices__item-text {
@@ -140,10 +146,10 @@
   .advices__item.advices__item--souvenirs {
     background-position: top center;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advices {
-    padding-bottom: 68px;
+  .advices__item-break {
+    display: inline;
+
+    vertical-align: top;
   }
 }
