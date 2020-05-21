@@ -9,6 +9,7 @@
   padding-right: 46px;
 
   color: $font-white;
+  font-family: "PT Sans", "Trebuchet MS", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -23,6 +24,13 @@
   width: 100%;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.button--modal {
+  padding-left: 75px;
+  padding-right: 75px;
+
+  font-size: 18px;
 }
 
 @media (min-width: $tablet-width) {
