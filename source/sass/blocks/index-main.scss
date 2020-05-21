@@ -86,14 +86,28 @@
     }
   }
 
-  .index-main__banner::after {
-    @include pseudoAbsolute;
+  .index-main__banner::before {
+    top: calc(100% - 36px);
+    left: 0;
+
+    width: 50%;
+    height: 36px;
+
+    background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
+
+    transform: none;
   }
 
-  .index-main__banner::before,
   .index-main__banner::after {
+    @include pseudoAbsolute;
+
     top: calc(100% - 36px);
+    left: 50%;
+
+    width: 50%;
     height: 36px;
+
+    background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
   }
 
   .index-main__lead {
