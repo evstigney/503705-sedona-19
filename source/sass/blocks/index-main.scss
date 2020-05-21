@@ -86,6 +86,10 @@
     }
   }
 
+  .index-main__banner::after {
+    @include pseudoAbsolute;
+  }
+
   .index-main__banner::before,
   .index-main__banner::after {
     top: calc(100% - 36px);
