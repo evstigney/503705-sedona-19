@@ -2,6 +2,10 @@
   line-height: 24px;
 }
 
+.inner-body__wrapper {
+  margin: 0 auto;
+}
+
 .inner-body__header {
   margin-bottom: 55px;
 }
@@ -11,6 +15,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .inner-body__wrapper {
+    width: $tablet-width;
+  }
+
   .inner-body__header {
     margin-bottom: 0;
   }

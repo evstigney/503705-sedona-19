@@ -23,10 +23,6 @@ body {
   background-color: $bg-white;
 }
 
-body > * {
-  margin: 0 auto;
-}
-
 a {
   color: $font-black;
   text-decoration: none;
@@ -49,18 +45,8 @@ img {
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  body > * {
-    width: $tablet-width;
-  }
-}
-
 @media (min-width: $desktop-width) {
   body {
     background-color: $bg-form-field;
-  }
-
-  body > * {
-    width: $desktop-width;
   }
 }
