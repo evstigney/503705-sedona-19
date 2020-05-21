@@ -35,25 +35,6 @@
   padding-top: 39px;
 }
 
-.feature--big:first-of-type::before,
-.feature--big:first-of-type::after {
-  @include pseudoAbsolute;
-
-  top: 0;
-  left: 0;
-
-  width: 50%;
-  height: 17px;
-
-  background: linear-gradient(to right top, rgba($bg-white, 0) 50%, $bg-white 50%);
-}
-
-.feature--big:first-of-type::after {
-  left: 50%;
-
-  background: linear-gradient(to right bottom, $bg-white 50%, rgba($bg-white, 0) 50%);
-}
-
 .feature--big .feature__header {
   margin-top: 18px;
 
@@ -155,11 +136,6 @@
 
   .feature:last-of-type .feature__text {
     width: 150px;
-  }
-
-  .feature--big:first-of-type::before,
-  .feature--big:first-of-type::after {
-    display: none;
   }
 
   .feature--big {

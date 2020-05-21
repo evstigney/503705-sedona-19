@@ -59,10 +59,12 @@
   .advices {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
     padding-top: 58px;
-    padding-left: 49px;
     padding-bottom: 46px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .advices__item {
@@ -77,22 +79,18 @@
     background-size: 75px;
   }
 
-  .advices__item:not(:nth-of-type(3n)) {
-    margin-right: 98px;
-  }
-
   .advices__item.advices__item--souvenirs {
     order: 2;
     margin-right: 0;
 
-    background-position: top left 47px;
+    background-position: top center;
     background-size: 62px;
   }
 
   .advices__item--food {
-    margin-right: 98px;
+    margin-right: 0;
 
-    background-position: top 4px left 41px;
+    background-position: top 5px center;
   }
 
   .advices__item--souvenirs .advices__item-header,

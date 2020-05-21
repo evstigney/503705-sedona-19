@@ -6,8 +6,9 @@
 }
 
 .features__lead {
-  order: -1;
+  position: relative;
 
+  order: -1;
   width: $mobile-width;
   margin-bottom: 26px;
   margin-left: auto;
@@ -16,6 +17,24 @@
   padding-right: 25px;
 
   line-height: 26px;
+}
+
+.features__lead::after {
+  @include pseudoAbsolute;
+
+  top: 100%;
+  left: 50%;
+  z-index: 2;
+
+  width: 100vw;
+  height: 41px;
+
+  background-color: transparent;
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  transform: translateX(-50vw);
 }
 
 .features__item:first-of-type {

@@ -26,26 +26,21 @@
   }
 }
 
-.index-main__banner::before,
-.index-main__banner::after {
+.index-main__banner::before {
   @include pseudoAbsolute;
 
-  top: calc(100% - 26px);
-
-  width: 50%;
-  height: 26px;
-}
-
-.index-main__banner::before {
-  left: 0;
-
-  background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
-}
-
-.index-main__banner::after {
+  bottom: 0;
   left: 50%;
 
-  background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
+  width: 100%;
+  height: 26px;
+
+  background-color: transparent;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  transform: translateX(-50%);
 }
 
 .index-main__lead {

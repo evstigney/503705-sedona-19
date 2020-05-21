@@ -33,6 +33,7 @@
 .photo__img-wrapper {
   order: -1;
   height: 280px;
+  margin-bottom: 7px;
 }
 
 .photo__author {
@@ -88,8 +89,17 @@
     display: none;
   }
 
+  .photo__img-wrapper {
+    margin-bottom: 0;
+  }
+
   .photo__header {
+    margin-top: 1px;
     margin-left: 21px;
+  }
+
+  .photo--big .photo__header {
+    margin-top: 8px;
   }
 
   .photo__author-wrapper {
