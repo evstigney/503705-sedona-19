@@ -75,3 +75,53 @@
 
   box-shadow: 0 calc(100vw - 20px) 0 100vw $bg-form-field;
 }
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 643px;
+    padding-top: 30px;
+    padding-bottom: 47px;
+  }
+
+  .modal--failure {
+    width: 402px;
+  }
+
+  .modal--success {
+    padding-bottom: 0;
+  }
+
+  .modal__header {
+    width: 280px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__message {
+    width: 282px;
+    margin-bottom: 33px;
+  }
+
+  .modal__button {
+    min-width: 270px;
+  }
+
+  .modal__header--success {
+    width: 450px;
+  }
+
+  .modal__message--success {
+    width: 450px;
+  }
+
+  .modal__button--success {
+    width: 457px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .modal__button--success::before {
+    box-shadow: 0 calc(100vw - 45px) 0 100vw $bg-form-field;
+  }
+}
