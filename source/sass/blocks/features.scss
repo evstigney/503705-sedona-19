@@ -56,4 +56,8 @@
     margin-top: 17px;
     margin-bottom: 49px;
   }
+
+  .features__lead::after {
+    display: none;
+  }
 }
