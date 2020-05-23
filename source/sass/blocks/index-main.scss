@@ -36,7 +36,7 @@
 .index-main__banner::before {
   @include pseudoAbsolute;
 
-  bottom: 0px;
+  bottom: 0;
   left: 50%;
 
   width: 100%;
@@ -45,7 +45,7 @@
   background-color: transparent;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
-  background-position: bottom 0px center;
+  background-position: bottom center;
 
   transform: translateX(-50%);
 }
@@ -117,27 +117,13 @@
   }
 
   .index-main__banner::before {
-    top: calc(100% - 36px);
-    left: 0;
+    $height: 57px;
 
-    width: 50%;
-    height: 36px;
+    top: calc(100% - $height);
 
-    background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
+    height: $height;
 
-    transform: none;
-  }
-
-  .index-main__banner::after {
-    @include pseudoAbsolute;
-
-    top: calc(100% - 36px);
-    left: 50%;
-
-    width: 50%;
-    height: 36px;
-
-    background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 
   .index-main__lead {
@@ -151,22 +137,7 @@
 
   .index-main__lead::before,
   .index-main__lead::after {
-    top: -57px;
-
-    width: 351px;
-    height: 57px;
-  }
-
-  .index-main__lead::before {
-    right: 50%;
-
-    background: linear-gradient(to right top, $bg-white 50%, transparent 50%);
-  }
-
-  .index-main__lead::after {
-    left: 50%;
-
-    background: linear-gradient(to right bottom, transparent 50%, $bg-white 50%);
+    display: none;
   }
 
   .index-main__advices {
