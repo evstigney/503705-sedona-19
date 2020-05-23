@@ -199,11 +199,8 @@
     transform: none;
   }
 
-  .inner-main__banner::before,
-  .inner-main__banner::after {
-    top: calc(100% - 57px);
-
-    height: 57px;
+  .inner-main__banner::before {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 
   .inner-main__header {

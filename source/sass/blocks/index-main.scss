@@ -164,10 +164,8 @@
     }
   }
 
-  .index-main__banner::before,
-  .index-main__banner::after {
-    top: calc(100% - 57px);
-    height: 57px;
+  .index-main__banner::before {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 
   .index-main__advices {
