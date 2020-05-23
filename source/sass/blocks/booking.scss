@@ -29,7 +29,7 @@
   }
 
   .booking__lead {
-    margin-top: 55px;
+    margin-top: 52px;
     margin-bottom: 17px;
 
     font-size: 30px;
@@ -48,6 +48,10 @@
 @media (min-width: 1200px) {
   .booking {
     padding-bottom: 67px;
+  }
+
+  .booking__lead {
+    margin-top: 54px;
   }
 
   .booking__text {
