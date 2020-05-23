@@ -11,6 +11,7 @@ html {
 body {
   @include resetMargins;
 
+  min-width: $mobile-width;
   overflow-x: hidden;
 
   color: $font-dark;

@@ -1,7 +1,12 @@
+.index-main {
+  min-width: $mobile-width;
+}
+
 .index-main__banner {
   position: relative;
-  left: calc(50% - 50vw);
+  left: 50%;
 
+  min-width: 100%;
   width: 100vw;
   min-height: 389px;
 
@@ -12,7 +17,7 @@
     url("../img/text-sedona-index.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-position:
-    center,
+    top 90px center,
     top center;
   background-size:
     281px,
@@ -24,12 +29,14 @@
       url("../img/text-sedona-index.svg"),
       url("../img/bg-back-mobile@2x.jpg");
   }
+
+  transform: translateX(-50%);
 }
 
 .index-main__banner::before {
   @include pseudoAbsolute;
 
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
 
   width: 100%;
@@ -38,16 +45,18 @@
   background-color: transparent;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom 0px center;
 
   transform: translateX(-50%);
 }
 
 .index-main__lead {
+  position: relative;
+
   width: $mobile-width;
   margin: 0 auto;
   padding-top: 40px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   padding-left: 25px;
   padding-right: 25px;
 
@@ -56,6 +65,25 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+}
+
+.index-main__lead::before,
+.index-main__lead::after {
+  @include pseudoAbsolute;
+
+  width: 50%;
+  height: 26px;
+
+  top: -26px;
+  left: 0;
+
+  background: linear-gradient(to right top, $bg-white 50%, transparent 50%);
+}
+
+.index-main__lead::after {
+  left: 50%;
+
+  background: linear-gradient(to right bottom, transparent 50%, $bg-white 50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -84,6 +112,8 @@
         url("../img/text-sedona-index.svg"),
         url("../img/bg-back-tablet@2x.jpg");
     }
+
+    transform: none;
   }
 
   .index-main__banner::before {
@@ -121,8 +151,6 @@
 
   .index-main__lead::before,
   .index-main__lead::after {
-    @include pseudoAbsolute;
-
     top: -57px;
 
     width: 351px;
@@ -132,13 +160,13 @@
   .index-main__lead::before {
     right: 50%;
 
-    background: linear-gradient(to right top, $bg-white 50%, rgba($bg-white, 0) 50%);
+    background: linear-gradient(to right top, $bg-white 50%, transparent 50%);
   }
 
   .index-main__lead::after {
     left: 50%;
 
-    background: linear-gradient(to right bottom, rgba($bg-white, 0) 50%, $bg-white 50%);
+    background: linear-gradient(to right bottom, transparent 50%, $bg-white 50%);
   }
 
   .index-main__advices {
