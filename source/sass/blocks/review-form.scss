@@ -21,9 +21,9 @@
   @include pseudoAbsolute;
 
   top: auto;
-  left: -100vw;
+  left: calc(50% - 50vw);
 
-  width: 200vw;
+  width: 100vw;
 
   background-color: inherit;
   border-top: 1px solid $bg-silver-grey;
@@ -441,6 +441,10 @@
     display: block;
     margin-top: 19px;
     margin-left: auto;
+  }
+
+  .review-form__field::placeholder {
+    font-size: 18px;
   }
 }
 
