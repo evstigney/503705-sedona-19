@@ -447,7 +447,7 @@
 
 @media (min-width: $desktop-width) {
   .review-form {
-    padding-top: 21px;
+    padding-top: 22px;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -536,5 +536,10 @@
 
   .review-form__box-label--checkbox {
     margin-bottom: 30px;
+  }
+
+  .review-form__field--text {
+    padding-top: 15px;
+    padding-left: 22px;
   }
 }
